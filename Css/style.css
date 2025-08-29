@@ -1,0 +1,394 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd60a;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pages {
+    display: flex;
+    gap: 20px;
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.divConH{
+direction: ltr;
+
+}
+.Hero h1 {
+    font-size: 1.5rem;
+    max-width: 800px;
+    direction: ltr;
+text-align: left;
+}
+
+.Hero p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align:left;
+}
+
+/* الاشكال الهندسية */ 
+
+.imageH{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+   width: 100vw;
+}
+.imageHero{
+width: 100vh;
+object-fit: cover;
+}
+
+
+
+
+.PROCESS {
+    padding: 20px;
+}
+
+.titleProc {
+    display: inline-block;
+    transform: rotate(-90deg);
+    letter-spacing: 2px;
+}
+
+.PROCESS table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.PROCESS td {
+    border: 1px solid #494949;
+    color: #a09f9f;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+}
+
+.PROCESS td h3 {
+    color: #ffffff;
+
+}
+
+.cir {
+    margin-top: 180px;
+
+    width: 80px;        
+    height: 80px;       
+    background-color: blue;
+    border-radius: 50%;   
+  }
+  .sq {
+    margin-top: 180px;
+    width: 80px;          
+    height: 80px;        
+    background-color: pink;
+  }
+  
+  .egg {
+    margin-top: 180px;
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .egg::before {
+    content: "";
+    position: absolute;
+    width:75px;
+    height:30px;
+    top: 2px; /* رفع النص العلوي */
+    border-radius: 100px 100px 0 0;
+    background: #5ac92e;
+    border: 3px solid #000;
+  }
+  
+  .egg::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    bottom: 2px; /*خفض النص السفلي */
+    border-radius: 0 0 100px 100px;
+    background: #5ac92e;
+  }
+  
+  .chick {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: yellow;
+    z-index: 1;
+  }
+
+  .triangle-container {
+    margin-top: 180px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  /* المثلثات */
+  .tria {
+    width: 40px;
+    height: 40px;
+    background: rgb(39, 207, 215);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+    position: absolute;
+  }
+  
+  /* توزيع المثلثات بشكل عشوائي */
+  .triangle-container .tria:nth-child(1) {
+    top: 10px;
+    left: 30px;
+    transform: rotate(-50deg);
+  }
+  
+  .triangle-container .tria:nth-child(2) {
+    top: 80px;
+    left: 100px;
+    transform: rotate(90deg);
+  }
+  
+  .triangle-container .tria:nth-child(3) {
+    top: 120px;
+    left: 40px;
+    transform: rotate(-60deg);
+  }
+  
+  .triangle-container .tria:nth-child(4) {
+    top: 110px;
+    left: 140px;
+    transform: rotate(90deg);
+  }
+
+.readMore {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ffd60a;
+
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: left;
+}
+
+.readMore::before {
+    content: "> ";
+}
+
+
+.WORK {
+    padding: 20px;
+}
+
+.WORK .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.WORK .card {
+    background: #000000;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 50%;
+    box-shadow: 0 1px 2px #ffd60a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.WORK .card figure {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.WORK .card figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.WORK .card h3 {
+    margin: 0 0 15px 0;
+    /* فراغ بعد العنوان */
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.WORK .card p {
+    font-size: 0.95rem;
+    color: #a09f9f;
+    line-height: 1.5;
+}
+
+.WORK>p {
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: #ffd60a;
+    text-align: center;
+}
+
+.otherRecent::before {
+    content: "> ";
+}
+
+.TESTIMONIALS {
+    padding: 20px;
+}
+
+.divider-shape {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin-left: 200px;
+}
+
+.divider-shape .line {
+    font-size: 300px;
+}
+
+.divider-shape .line1 {
+    color: #34dbdb;
+}
+
+.divider-shape .line2 {
+    color: #e4e73c;
+}
+
+.TESTDIV {
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 100px;
+    max-width: 700px;
+    align-self: center;
+    width: 80%;
+    text-align: center; 
+    border-collapse: collapse;
+    margin: 0 auto;
+
+}
+  
+  .TESTDIV > p:first-of-type {
+    margin-bottom: 30px;        
+    font-size: 1rem;
+    color: #a09f9f;
+    line-height: 1.6;
+  }
+  
+  .TESTDIV .person {
+    display: flex;
+    align-items: center;          
+    gap: 20px;                    
+    text-align: left;           
+  }
+  
+  .TESTDIV .person figure {
+    margin: 0;
+    flex-shrink: 0;              
+  }
+  
+  .TESTDIV .person img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;          
+    object-fit: cover;
+  }
+
+  .person-info {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+  }
+  .person-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  
+  .CaseStudy{
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffd60a;
+    text-align: right;
+  }
+  
+  .TESTDIV .person-info p:last-of-type {
+    font-size: small;
+    font-weight:100;
+    color: #a09f9f;
+    margin-top: 5px;
+  }
+.RESOURCES{
+    padding: 20px;
+}
+  footer{
+    display: flex;
+    padding:80px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .CONFOOTER a{
+    color: rgb(189, 188, 188);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: normal;
+    transition: 0.3s;
+  }
+.ft{
+    padding: 10px;
+    color: rgb(189, 188, 188);
+    font-weight: normal;
+    transition: 0.3s;
+}
