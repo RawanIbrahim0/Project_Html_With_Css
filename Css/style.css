@@ -81,13 +81,13 @@ nav a:hover {
 
 .oneShapes {
   position: relative;
-  top: 600px;
-  left: -900px;
+  top: 150px;
+  left: -500px;
 }
 
 .one1 {
   position: absolute;
-  width: 300px;
+  width: 200px;
   height: 100px;
   background-color: rgb(244, 96, 207);
   transform: rotate(50deg);
@@ -96,81 +96,111 @@ nav a:hover {
 
 .two2 {
   width: 100px;
-  height: 500px;
+  height: 400px;
   background-color: rgb(244, 96, 207);
   transform: rotate(50deg);
 }
 
 .triangle1 {
-  right: 1770px;
-  width: 300px;
-  height: 300px;
-  background: rgb(39, 207, 215);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  position: absolute;
-  top: 900px;
-  /*filter: blur(20px);*/
-  /*  background: repeating-linear-gradient(
-90deg, 20px 0 #e76060 #fff 20px 40px),
-repeating-linear-gradient(
-0deg, 20px 0 #e06363 #fff 20px 40px);  */
-}
-.triangle1::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-      0deg,
-      rgb(39, 207, 215) 0 4px,
-      transparent 4px 8px
-    ),
-    repeating-linear-gradient(90deg, #000000 0 4px, transparent 4px 8px);
-}
+    right: 870px;
+    width: 300px;
+    height: 300px;
+    background: rgb(39, 207, 215);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 450px;
+    overflow: hidden; /* مهم حتى ما يطلع الغباش لبرا */
+  }
+  
+  .triangle1::after {
+    content: "";
+    position: absolute;
+    inset: 1; /* غطّي كل المثلث */
+    clip-path: inherit; /* خليه ياخد نفس شكل المثلث */
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(255,255,255,0.3) 0 4px,
+        transparent 4px 8px
+      ),
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.2) 0 4px, transparent 4px 8px);
+    
+    /* حتى نخلي الغباش يبين بجزء بس من المثلث */
+    width: 100%;
+    height: 30%;   /* مثلاً نص المثلث */
+    top: 0;     /* خليه يغطي من تحت */
+  }
+
 
 .circ {
+  top: 660px;
   right: 800px;
   width: 80px;
   height: 80px;
   background-color: blue;
   border-radius: 50%;
   position: absolute;
+  overflow: hidden;
 }
+  
+  .circ::after {  
+    content: "";  
+    position: absolute;  
+    inset: 2; /* يغطي الدائرة كلها */  
+    background: repeating-linear-gradient(  
+        0deg,  
+        rgba(255,255,255,0.3) 0 4px,  
+        transparent 4px 8px  
+      ),  
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.2) 0 4px, transparent 4px 8px);  
+  
+    width: 100%;  
+    height: 20%;   /* بس نص الدائرة */  
+    top: 0;        /* الغباش يغطي الجزء العلوي */
+  }
+
 
 .greenLine {
+  top: 730px;
   position: absolute;
-  right: 700px;
+  right: 500px;
   width: 100px;
   height: 20px;
   background-color: rgb(87, 244, 136);
-  /* left: -100px; */
+  overflow: hidden;
 }
 
+
 .pinkLine1 {
+  top: 660px;
   position: absolute;
-  right: 600px;
+  right: 130px;
   width: 300px;
   height: 20px;
   background-color: rgb(243, 73, 209);
   transform: rotate(10deg);
 }
 .pinkLine2 {
+  top: 550px;
   position: absolute;
-  right: 500px;
-  width: 300px;
+  right: 130px;
+  width: 200px;
   height: 20px;
   background-color: rgb(243, 73, 209);
   transform: rotate(-10deg);
 }
+
 .pinkLine3 {
+    top: 440px;
+
   position: absolute;
-  right: 400px;
+  right: 130px;
   width: 300px;
   height: 20px;
   background-color: rgb(243, 73, 209);
   transform: rotate(10deg);
 }
 
-/*         PROCESS            */
+/*         PROCESS           */
 
 .PROCESS {
   padding: 20px;
@@ -217,9 +247,9 @@ repeating-linear-gradient(
   height: 80px;
   background-color: pink;
 }
+
 .egg {
   margin-top: 180px;
-
   position: relative;
   width: 100px;
   height: 100px;
@@ -233,7 +263,7 @@ repeating-linear-gradient(
   position: absolute;
   width: 75px;
   height: 30px;
-  top: 2px; /* رفع النص العلوي */
+  top: 2px;
   border-radius: 100px 100px 0 0;
   background: #5ac92e;
   border: 3px solid #000;
@@ -244,7 +274,7 @@ repeating-linear-gradient(
   position: absolute;
   width: 75px;
   height: 30px;
-  bottom: 2px; /*خفض النص السفلي */
+  bottom: 2px;
   border-radius: 0 0 100px 100px;
   background: #5ac92e;
 }
@@ -279,16 +309,19 @@ repeating-linear-gradient(
   left: 30px;
   transform: rotate(-50deg);
 }
+
 .triangle-container .tria:nth-child(2) {
   top: 80px;
   left: 100px;
   transform: rotate(90deg);
 }
+
 .triangle-container .tria:nth-child(3) {
   top: 120px;
   left: 40px;
   transform: rotate(-60deg);
 }
+
 .triangle-container .tria:nth-child(4) {
   top: 110px;
   left: 140px;
@@ -495,6 +528,7 @@ repeating-linear-gradient(
   flex-direction: column;
   justify-content: center;
 }
+
 .person-info h4 {
   margin: 0 0 5px 0;
   font-size: 1.1rem;
@@ -608,9 +642,11 @@ repeating-linear-gradient(
   padding: 20px;
   border-radius: 10px;
 }
+
 .tableForm {
   box-shadow: 0 2px 6px #ffd60a;
 }
+
 .RAL {
   display: flex;
 }
@@ -669,6 +705,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
 .CONFOOTER a {
   color: rgb(189, 188, 188);
   text-decoration: none;
@@ -676,6 +713,7 @@ footer {
   font-weight: normal;
   transition: 0.3s;
 }
+
 .ft {
   padding: 10px;
   color: rgb(189, 188, 188);
