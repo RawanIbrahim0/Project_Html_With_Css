@@ -36,11 +36,11 @@ nav a:hover {
 /*         Hero           */
 
 .Hero {
-  background-image: url("../assets/images/Screenshot__446_-removebg-preview\ \(1\).png");
+  /*   background-image: url("../assets/images/Screenshot__446_-removebg-preview\ \(1\).png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100vh;
+  height: 100vh; */
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -77,6 +77,97 @@ nav a:hover {
 .imageHero {
   width: 100vh;
   object-fit: cover;
+}
+
+.oneShapes {
+  position: relative;
+  top: 600px;
+  left: -900px;
+}
+
+.one1 {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(244, 96, 207);
+  transform: rotate(50deg);
+  left: -100px;
+}
+
+.two2 {
+  width: 100px;
+  height: 500px;
+  background-color: rgb(244, 96, 207);
+  transform: rotate(50deg);
+}
+
+.triangle1 {
+  right: 1770px;
+  width: 300px;
+  height: 300px;
+  background: rgb(39, 207, 215);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  top: 900px;
+  /*filter: blur(20px);*/
+  /*  background: repeating-linear-gradient(
+90deg, 20px 0 #e76060 #fff 20px 40px),
+repeating-linear-gradient(
+0deg, 20px 0 #e06363 #fff 20px 40px);  */
+}
+.triangle1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+      0deg,
+      rgb(39, 207, 215) 0 4px,
+      transparent 4px 8px
+    ),
+    repeating-linear-gradient(90deg, #000000 0 4px, transparent 4px 8px);
+}
+
+.circ {
+  right: 800px;
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.greenLine {
+  position: absolute;
+  right: 700px;
+  width: 100px;
+  height: 20px;
+  background-color: rgb(87, 244, 136);
+  /* left: -100px; */
+}
+
+.pinkLine1 {
+  position: absolute;
+  right: 600px;
+  width: 300px;
+  height: 20px;
+  background-color: rgb(243, 73, 209);
+  transform: rotate(10deg);
+}
+.pinkLine2 {
+  position: absolute;
+  right: 500px;
+  width: 300px;
+  height: 20px;
+  background-color: rgb(243, 73, 209);
+  transform: rotate(-10deg);
+}
+.pinkLine3 {
+  position: absolute;
+  right: 400px;
+  width: 300px;
+  height: 20px;
+  background-color: rgb(243, 73, 209);
+  transform: rotate(10deg);
 }
 
 /*         PROCESS            */
@@ -182,6 +273,7 @@ nav a:hover {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   position: absolute;
 }
+
 .triangle-container .tria:nth-child(1) {
   top: 10px;
   left: 30px;
