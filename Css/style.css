@@ -59,8 +59,6 @@ text-align: left;
     text-align:left;
 }
 
-/* الاشكال الهندسية */ 
-
 .imageH{
    display: flex; 
    justify-content: center;
@@ -72,9 +70,6 @@ text-align: left;
 width: 100vh;
 object-fit: cover;
 }
-
-
-
 
 .PROCESS {
     padding: 20px;
@@ -391,4 +386,63 @@ object-fit: cover;
     color: rgb(189, 188, 188);
     font-weight: normal;
     transition: 0.3s;
+}
+
+.STARTAPROJECT{
+    padding: 20px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* عمودين */
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tableForm{
+    box-shadow: 0 2px 6px #ffd60a;
+  }
+  .RAL{
+    display: flex;
+  }
+  .butun{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+
+  }
+
+  .ZR{
+    height: 5vh;
+  }
+
+  input {
+    width: 20vw;
+    margin: 10px;
+    background-color: #000000;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+.formP{
+    border: 1px solid #494949;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+}
+.schedule{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+.imandSchedule{
+    display: flex;
+    justify-items: center;
+    justify-content: left;
 }
