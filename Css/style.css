@@ -17,6 +17,8 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
     transition: 0.3s;
+    font-family: "Noto Serif JP", serif;
+
 }
 
 nav a:hover {
@@ -59,12 +61,16 @@ nav a:hover {
     max-width: 800px;
     direction: ltr;
     text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+
 }
 
 .Hero p {
     font-size: 0.8rem;
     letter-spacing: 2px;
     text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+
 }
 
 .imageH {
@@ -100,8 +106,8 @@ nav a:hover {
   
 .oneShapes {
     position: relative;
-    top: 400px;
-    left: -490px;
+    top: 380px;
+    left: -390px;
 }
 
 .one1 {
@@ -122,7 +128,7 @@ nav a:hover {
 }
 
 .triangle1 {
-    right: 1100px;
+    right: 1000px;
     width: 300px;
     height: 300px;
     background: rgb(39, 207, 215);
@@ -139,8 +145,8 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     transform: rotate(35deg);
-    bottom: 100px;
-    left: 800px;
+    bottom: 40px;
+    left: 650px;
 }
 
 .rd {
@@ -169,7 +175,7 @@ nav a:hover {
 
 .circ {
     top: 660px;
-    right: 650px;
+    right: 550px;
     width: 80px;
     height: 80px;
     background-color: blue;
@@ -181,18 +187,17 @@ nav a:hover {
 .greenLine {
     top: 730px;
     position: absolute;
-    right: 500px;
+    right: 400px;
     width: 100px;
     height: 20px;
     background-color: rgb(87, 244, 136);
     overflow: hidden;
 }
 
-
 .pinkLine1 {
     top: 660px;
     position: absolute;
-    right: 130px;
+    right: 80px;
     width: 300px;
     height: 20px;
     background-color: rgb(243, 73, 209);
@@ -202,7 +207,7 @@ nav a:hover {
 .pinkLine2 {
     top: 550px;
     position: absolute;
-    right: 130px;
+    right:80px;
     width: 200px;
     height: 20px;
     background-color: rgb(243, 73, 209);
@@ -211,9 +216,8 @@ nav a:hover {
 
 .pinkLine3 {
     top: 440px;
-
     position: absolute;
-    right: 130px;
+    right: 80px;
     width: 300px;
     height: 20px;
     background-color: rgb(243, 73, 209);
@@ -378,8 +382,8 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-items: center;
-    justify-content: center;
-}
+    justify-content: space-between;
+    }
 
 .WORK .card1 {
     background: #000000;
@@ -421,6 +425,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 .WORK .card4 {
@@ -435,6 +440,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 .WORK .card figure {
@@ -492,6 +498,8 @@ nav a:hover {
 .divider-shape .line {
     font-size: 300px;
     position: absolute;
+    font-family: "Nunito Sans", sans-serif;
+
 }
 
 .divider-shape .line1 {
@@ -516,7 +524,7 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.TESTDIV>p:first-of-type {
+.TESTDIV >p:first-of-type {
     margin-bottom: 30px;
     font-size: 1rem;
     color: #a09f9f;
@@ -646,6 +654,22 @@ nav a:hover {
     position: absolute;
     left: 60px;
 }
+
+.paper.second {
+    top: -20px;
+    position: absolute;
+    z-index: 2;
+    width: 1294px;
+    height: 900px;
+    border-radius: 12px;
+    background: radial-gradient(rgba(0, 0, 0, 0.35) 2px, transparent 1.6px) 0 0 /22px 22px,
+      radial-gradient(rgba(0, 0, 0, 0.25) 2px, transparent 1.6px) 10px 6px /18px 18px,
+      radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 1.6px) 3px 13px/26px 26px,
+      radial-gradient(rgba(0, 0, 0, 0.17) 1px, transparent 1.6px) 14px 9px /30px 30px,
+      radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1.6px) 5px 17px/34px 34px,
+      radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1.6px) 7px 3px /40px 40px,
+      transparent;
+  }
 
 /*         STARTAPROJECT           */
 .STARTAPROJECT {
