@@ -1,722 +1,745 @@
 body {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 50px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ffd60a;
+    color: #ffd60a;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .pages {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 /*         Hero           */
 
 .Hero {
-  /*   background-image: url("../assets/images/Screenshot__446_-removebg-preview\ \(1\).png");
+    /*   background-image: url("../assets/images/Screenshot__446_-removebg-preview\ \(1\).png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  align-items: center;
-  text-align: center;
-  min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
 }
 
 .divConH {
-  direction: ltr;
+    direction: ltr;
 }
 
 .Hero h1 {
-  width: 27vw;
-  font-size: 1.5rem;
-  max-width: 800px;
-  direction: ltr;
-  text-align: left;
+    width: 27vw;
+    font-size: 1.5rem;
+    max-width: 800px;
+    direction: ltr;
+    text-align: left;
 }
 
 .Hero p {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  text-align: left;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-align: left;
 }
 
 .imageH {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 100vw;
-}
-.imageHero {
-  width: 100vh;
-  object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
 }
 
+.imageHero {
+    width: 100vh;
+    object-fit: cover;
+}
+
+.paper.first {
+    bottom: 0;
+    left: 320px;
+    position: absolute;
+    z-index: 2;
+    width: 594px;
+    height: 550px;
+    border-radius: 12px;
+    background: radial-gradient(rgba(0, 0, 0, 0.35) 2px, transparent 1.6px) 0 0 /22px 22px,
+      radial-gradient(rgba(0, 0, 0, 0.25) 2px, transparent 1.6px) 10px 6px /18px 18px,
+      radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 1.6px) 3px 13px/26px 26px,
+      radial-gradient(rgba(0, 0, 0, 0.17) 1px, transparent 1.6px) 14px 9px /30px 30px,
+      radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1.6px) 5px 17px/34px 34px,
+      radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1.6px) 7px 3px /40px 40px,
+      transparent;
+  
+  }
+  
 .oneShapes {
-  position: relative;
-  top: 150px;
-  left: -500px;
+    position: relative;
+    top: 400px;
+    left: -490px;
 }
 
 .one1 {
-  position: absolute;
-  width: 200px;
-  height: 100px;
-  background-color: rgb(244, 96, 207);
-  transform: rotate(50deg);
-  left: -100px;
+    top: 100px;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(244, 96, 207);
+    transform: rotate(8deg);
+    left: -100px;
 }
 
 .two2 {
-  width: 100px;
-  height: 400px;
-  background-color: rgb(244, 96, 207);
-  transform: rotate(50deg);
+    width: 100px;
+    height: 450px;
+    background-color: rgb(244, 96, 207);
+    transform: rotate(8deg);
 }
 
 .triangle1 {
-    right: 870px;
+    right: 1100px;
     width: 300px;
     height: 300px;
     background: rgb(39, 207, 215);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     position: absolute;
     top: 450px;
-    overflow: hidden; /* مهم حتى ما يطلع الغباش لبرا */
-  }
-  
-  .triangle1::after {
-    content: "";
-    position: absolute;
-    inset: 1; /* غطّي كل المثلث */
-    clip-path: inherit; /* خليه ياخد نفس شكل المثلث */
-    background: repeating-linear-gradient(
-        0deg,
-        rgba(255,255,255,0.3) 0 4px,
-        transparent 4px 8px
-      ),
-      repeating-linear-gradient(90deg, rgba(0,0,0,0.2) 0 4px, transparent 4px 8px);
-    
-    /* حتى نخلي الغباش يبين بجزء بس من المثلث */
-    width: 100%;
-    height: 30%;   /* مثلاً نص المثلث */
-    top: 0;     /* خليه يغطي من تحت */
-  }
+    overflow: hidden;
+    /* مهم حتى ما يطلع الغباش لبرا */
+}
 
+.plus {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(35deg);
+    bottom: 100px;
+    left: 800px;
+}
+
+.rd {
+    width: 100px;
+    height: 500px;
+    background-color: #ffd426;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.ld {
+    width: 100px;
+    height: 500px;
+    background-color: #ffd426;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.plus .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+}
 
 .circ {
-  top: 660px;
-  right: 800px;
-  width: 80px;
-  height: 80px;
-  background-color: blue;
-  border-radius: 50%;
-  position: absolute;
-  overflow: hidden;
+    top: 660px;
+    right: 650px;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
 }
-  
-  .circ::after {  
-    content: "";  
-    position: absolute;  
-    inset: 2; /* يغطي الدائرة كلها */  
-    background: repeating-linear-gradient(  
-        0deg,  
-        rgba(255,255,255,0.3) 0 4px,  
-        transparent 4px 8px  
-      ),  
-      repeating-linear-gradient(90deg, rgba(0,0,0,0.2) 0 4px, transparent 4px 8px);  
-  
-    width: 100%;  
-    height: 20%;   /* بس نص الدائرة */  
-    top: 0;        /* الغباش يغطي الجزء العلوي */
-  }
-
 
 .greenLine {
-  top: 730px;
-  position: absolute;
-  right: 500px;
-  width: 100px;
-  height: 20px;
-  background-color: rgb(87, 244, 136);
-  overflow: hidden;
+    top: 730px;
+    position: absolute;
+    right: 500px;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(87, 244, 136);
+    overflow: hidden;
 }
 
 
 .pinkLine1 {
-  top: 660px;
-  position: absolute;
-  right: 130px;
-  width: 300px;
-  height: 20px;
-  background-color: rgb(243, 73, 209);
-  transform: rotate(10deg);
+    top: 660px;
+    position: absolute;
+    right: 130px;
+    width: 300px;
+    height: 20px;
+    background-color: rgb(243, 73, 209);
+    transform: rotate(10deg);
 }
+
 .pinkLine2 {
-  top: 550px;
-  position: absolute;
-  right: 130px;
-  width: 200px;
-  height: 20px;
-  background-color: rgb(243, 73, 209);
-  transform: rotate(-10deg);
+    top: 550px;
+    position: absolute;
+    right: 130px;
+    width: 200px;
+    height: 20px;
+    background-color: rgb(243, 73, 209);
+    transform: rotate(-10deg);
 }
 
 .pinkLine3 {
     top: 440px;
 
-  position: absolute;
-  right: 130px;
-  width: 300px;
-  height: 20px;
-  background-color: rgb(243, 73, 209);
-  transform: rotate(10deg);
+    position: absolute;
+    right: 130px;
+    width: 300px;
+    height: 20px;
+    background-color: rgb(243, 73, 209);
+    transform: rotate(10deg);
 }
 
 /*         PROCESS           */
 
 .PROCESS {
-  padding: 20px;
-  margin: 150px;
+    padding: 20px;
+    margin: 150px;
 }
 
 .titleProc {
-  display: inline-block;
-  transform: rotate(-90deg);
-  letter-spacing: 2px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    letter-spacing: 2px;
 }
 
 .PROCESS table {
-  width: 80%;
-  border-collapse: collapse;
-  margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
 }
 
 .PROCESS td {
-  border: 1px solid #494949;
-  color: #a09f9f;
-  padding: 20px;
-  text-align: center;
-  vertical-align: top;
-  justify-content: center;
-  align-items: center;
+    border: 1px solid #494949;
+    color: #a09f9f;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
 }
 
 .PROCESS td h3 {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .cir {
-  margin-top: 180px;
+    margin-top: 180px;
 
-  width: 80px;
-  height: 80px;
-  background-color: blue;
-  border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
 }
+
 .sq {
-  margin-top: 180px;
-  width: 80px;
-  height: 80px;
-  background-color: pink;
+    margin-top: 180px;
+    width: 80px;
+    height: 80px;
+    background-color: pink;
 }
 
 .egg {
-  margin-top: 180px;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin-top: 180px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .egg::before {
-  content: "";
-  position: absolute;
-  width: 75px;
-  height: 30px;
-  top: 2px;
-  border-radius: 100px 100px 0 0;
-  background: #5ac92e;
-  border: 3px solid #000;
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    top: 2px;
+    border-radius: 100px 100px 0 0;
+    background: #5ac92e;
+    border: 3px solid #000;
 }
 
 .egg::after {
-  content: "";
-  position: absolute;
-  width: 75px;
-  height: 30px;
-  bottom: 2px;
-  border-radius: 0 0 100px 100px;
-  background: #5ac92e;
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    bottom: 2px;
+    border-radius: 0 0 100px 100px;
+    background: #5ac92e;
 }
 
 .chick {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: yellow;
-  z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: yellow;
+    z-index: 1;
 }
 
 .triangle-container {
-  margin-top: 180px;
-  position: relative;
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
+    margin-top: 180px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
 }
 
 /* المثلثات */
 .tria {
-  width: 40px;
-  height: 40px;
-  background: rgb(39, 207, 215);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgb(39, 207, 215);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
 }
 
 .triangle-container .tria:nth-child(1) {
-  top: 10px;
-  left: 30px;
-  transform: rotate(-50deg);
+    top: 10px;
+    left: 30px;
+    transform: rotate(-50deg);
 }
 
 .triangle-container .tria:nth-child(2) {
-  top: 80px;
-  left: 100px;
-  transform: rotate(90deg);
+    top: 80px;
+    left: 100px;
+    transform: rotate(90deg);
 }
 
 .triangle-container .tria:nth-child(3) {
-  top: 120px;
-  left: 40px;
-  transform: rotate(-60deg);
+    top: 120px;
+    left: 40px;
+    transform: rotate(-60deg);
 }
 
 .triangle-container .tria:nth-child(4) {
-  top: 110px;
-  left: 140px;
-  transform: rotate(90deg);
+    top: 110px;
+    left: 140px;
+    transform: rotate(90deg);
 }
 
 .readMore {
-  margin-top: 30px;
-  font-size: 0.9rem;
-  color: #ffd60a;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ffd60a;
 
-  display: block;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  text-align: left;
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: left;
 }
 
 .readMore::before {
-  content: "> ";
+    content: "> ";
 }
 
 /*         WORK            */
 
 .WORK {
-  padding: 20px;
-  margin: 150px;
+    padding: 20px;
+    margin: 150px;
 }
 
 .WORK .cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  justify-items: center;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    justify-content: center;
 }
 
 .WORK .card1 {
-  background: #000000;
-  border: 1px solid #404040;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  max-width: 50%;
-  box-shadow: 0 1px 2px #ffd60a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    background: #000000;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 50%;
+    box-shadow: 0 1px 2px #ffd60a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .WORK .card2 {
-  background: #000000;
-  border: 1px solid #404040;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  max-width: 50%;
-  box-shadow: 0 1px 2px #ffd60a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    background: #000000;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 50%;
+    box-shadow: 0 1px 2px #ffd60a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .WORK .card3 {
-  background: #000000;
-  border: 1px solid #404040;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  max-width: 50%;
-  box-shadow: 0 1px 2px #ffd60a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    background: #000000;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 50%;
+    box-shadow: 0 1px 2px #ffd60a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .WORK .card4 {
-  background: #000000;
-  border: 1px solid #404040;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100%;
-  max-width: 50%;
-  box-shadow: 0 1px 2px #ffd60a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    background: #000000;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 50%;
+    box-shadow: 0 1px 2px #ffd60a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .WORK .card figure {
-  width: 100%;
-  margin: 0 0 20px 0;
+    width: 100%;
+    margin: 0 0 20px 0;
 }
 
 .WORK .card figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .WORK .card h3 {
-  margin: 0 0 15px 0;
-  font-size: 1.5rem;
-  font-weight: 700;
+    margin: 0 0 15px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .WORK .card p {
-  font-size: 0.95rem;
-  color: #a09f9f;
-  line-height: 1.5;
+    font-size: 0.95rem;
+    color: #a09f9f;
+    line-height: 1.5;
 }
 
-.WORK > p {
-  margin-top: 30px;
-  font-size: 0.95rem;
-  color: #ffd60a;
-  text-align: center;
+.WORK>p {
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: #ffd60a;
+    text-align: center;
 }
 
 .otherRecent::before {
-  content: "> ";
+    content: "> ";
 }
 
 /*         TESTIMONIALS           */
 
 .TESTIMONIALS {
-  padding: 20px;
-  margin: 150px;
+    padding: 20px;
+    margin: 150px;
 }
 
 .divider-shape {
-  display: flex;
-  text-align: left;
-  justify-content: left;
-  margin-left: 100px;
-  top: -550px;
-  left: 60px;
-  position: relative;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    margin-left: 100px;
+    top: -550px;
+    left: 60px;
+    position: relative;
 }
 
 .divider-shape .line {
-  font-size: 300px;
-  position: absolute;
+    font-size: 300px;
+    position: absolute;
 }
 
 .divider-shape .line1 {
-  color: #34dbdb;
+    color: #34dbdb;
 }
 
 .divider-shape .line2 {
-  color: #f1c83f;
-  left: 50px;
-  top: -50px;
+    color: #f1c83f;
+    left: 50px;
+    top: -50px;
 }
 
 .TESTDIV {
-  border: 1px solid #404040;
-  border-radius: 10px;
-  padding: 100px;
-  max-width: 700px;
-  align-self: center;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 100px;
+    max-width: 700px;
+    align-self: center;
 
-  text-align: center;
-  border-collapse: collapse;
-  margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
 }
 
-.TESTDIV > p:first-of-type {
-  margin-bottom: 30px;
-  font-size: 1rem;
-  color: #a09f9f;
-  line-height: 1.6;
+.TESTDIV>p:first-of-type {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #a09f9f;
+    line-height: 1.6;
 }
 
 .TESTDIV .person {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  text-align: left;
-  align-items: center;
-  justify-items: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
 }
 
 .TESTDIV .person figure {
-  margin: 0;
-  flex-shrink: 0;
+    margin: 0;
+    flex-shrink: 0;
 }
 
 .TESTDIV .person img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .person-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .person-info h4 {
-  margin: 0 0 5px 0;
-  font-size: 1.1rem;
-  font-weight: 700;
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .CaseStudy {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #ffd60a;
-  text-align: right;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffd60a;
+    text-align: right;
 }
 
 .TESTDIV .person-info p:last-of-type {
-  font-size: small;
-  font-weight: 100;
-  color: #a09f9f;
-  margin-top: 5px;
+    font-size: small;
+    font-weight: 100;
+    color: #a09f9f;
+    margin-top: 5px;
 }
 
 /*         RESOURCES           */
 
 .RESOURCES {
-  padding: 20px;
-  margin: 150px;
+    padding: 20px;
+    margin: 150px;
 }
 
 .allContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
-  position: relative;
-  top: 100px;
+    position: relative;
+    top: 100px;
 }
 
 .CircleRE {
-  margin-top: 180px;
-  width: 80px;
-  height: 80px;
-  background-color: rgb(209, 102, 200);
-  border-radius: 50%;
-  right: -40px;
-  top: -260px;
-  position: absolute;
+    margin-top: 180px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(209, 102, 200);
+    border-radius: 50%;
+    right: -40px;
+    top: -260px;
+    position: absolute;
 }
 
 .procimag {
-  background-image: url("../assets/images/web.png");
-  background-size: contain;
-  width: 20vw;
-  height: 50vh;
-  text-align: center;
-  justify-content: space-between;
-  padding: 20px;
+    background-image: url("../assets/images/web.png");
+    background-size: contain;
+    width: 20vw;
+    height: 50vh;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .buttonWhy {
-  height: 4.3vh;
-  width: 8vw;
-  margin-top: 27vh;
-  border: #ffffff solid 0.2px;
-  color: #ffffff;
-  background-color: transparent;
+    height: 4.3vh;
+    width: 8vw;
+    margin-top: 27vh;
+    border: #ffffff solid 0.2px;
+    color: #ffffff;
+    background-color: transparent;
 }
 
 .contentCANDIMG {
-  justify-content: right;
+    justify-content: right;
 }
 
 .EXPERT {
-  letter-spacing: 10px;
+    letter-spacing: 10px;
 }
 
 .halfCircle {
-  position: relative;
-  padding-left: 30px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  top: 300px;
+    position: relative;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: 300px;
 }
 
 .halfCircle p {
-  font-size: 1rem;
-  width: 130px;
+    font-size: 1rem;
+    width: 130px;
 }
 
 .withFAQ {
-  padding-left: 250px;
-  bottom: 180px;
-  position: absolute;
-  left: 60px;
+    padding-left: 250px;
+    bottom: 180px;
+    position: absolute;
+    left: 60px;
 }
 
 /*         STARTAPROJECT           */
 .STARTAPROJECT {
-  padding: 20px;
-  margin: 150px;
-  margin-top: 300px;
+    padding: 20px;
+    margin: 150px;
+    margin-top: 300px;
 }
 
 .form {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* عمودين */
-  gap: 20px;
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* عمودين */
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .tableForm {
-  box-shadow: 0 2px 6px #ffd60a;
+    box-shadow: 0 2px 6px #ffd60a;
 }
 
 .RAL {
-  display: flex;
+    display: flex;
 }
 
 .butun {
-  display: flex;
-  margin: 10px;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .ZR {
-  height: 4vh;
+    height: 4vh;
 }
 
 input {
-  width: 20vw;
-  margin: 10px;
-  background-color: #000000;
-  padding: 10px;
-  border: 1px solid #ffffff;
-  border-radius: 6px;
-  font-size: 14px;
+    width: 20vw;
+    margin: 10px;
+    background-color: #000000;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
 }
 
 .formP {
-  border: 1px solid #494949;
-  padding: 20px;
-  text-align: center;
-  vertical-align: top;
-  justify-content: center;
-  align-items: center;
+    border: 1px solid #494949;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
 }
 
 .schedule {
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
 }
 
 .imandSchedule {
-  display: flex;
-  justify-items: center;
-  justify-content: left;
-  align-items: center;
+    display: flex;
+    justify-items: center;
+    justify-content: left;
+    align-items: center;
 }
+
 .hellosvz {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 /*            footer            */
 footer {
-  display: flex;
-  padding: 80px;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    padding: 80px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .CONFOOTER a {
-  color: rgb(189, 188, 188);
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: normal;
-  transition: 0.3s;
+    color: rgb(189, 188, 188);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: normal;
+    transition: 0.3s;
 }
 
 .ft {
-  padding: 10px;
-  color: rgb(189, 188, 188);
-  font-weight: normal;
-  transition: 0.3s;
+    padding: 10px;
+    color: rgb(189, 188, 188);
+    font-weight: normal;
+    transition: 0.3s;
 }
